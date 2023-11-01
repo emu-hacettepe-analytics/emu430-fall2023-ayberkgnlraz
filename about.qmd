@@ -7,13 +7,9 @@ sidebar: false
 
 -   B.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.
 
-
-
 ## Internships
 
 1.  TAI, Production Planning Intern, 2023
-
-
 
 # Projects
 

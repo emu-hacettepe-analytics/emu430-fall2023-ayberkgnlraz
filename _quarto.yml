@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student/Group Full Name]'s Analytics Lab"
+  title: "Ayberk Gönülrazı's Analytics Lab"
   navbar:
     search: true
     left:
@@ -22,11 +22,11 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/ayberkgnlraz
+      - icon: instagram
+        href: https://www.instagram.com/ayberkgnlraz/
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://www.linkedin.com/in/ayberk-g%C3%B6n%C3%BClraz%C4%B1-50a1141b7/
 
   sidebar:
     - title: "Assignments"

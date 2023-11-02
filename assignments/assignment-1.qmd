@@ -20,8 +20,12 @@ I have found and watch this interesting [**video**](https://www.youtube.com/watc
 
     my_vector\[1\]
 
+    \`\`\`
+
 -   To select the first element from an existing list in Python, we do this:
 
     \`\`\`{python}
 
     my_list\[0\]
+
+    \`\`\`

@@ -4,12 +4,24 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
-My first assignment has two parts.
+My first assignment has four parts.
 
 ## (a)
 
-## (b)
+I have found and watch this interesting [**video**](https://www.youtube.com/watch?v=jr9BhIMwTvA) **a**bout R programming language and interesting facts about it. It contains the basic features and applications of R. It also give information about the jobs that are using R and their average salaries.
+
+## (b) 
+
+-   The first thing that caught my attention was the difference between th R programming language and the Python programming language is that in R, when you want to acces the elements in a sequence, you need to start counting from one, but for Python, you need to start counting from zero. That is, for R the first element is at position one, but for Python the first element is at position zero.
+
+-   For example Let's say we have a vector in R and we named it my_vector. What we need to do to select the first element in this vector :
+
+    \`\`\`{r}
+
+    my_vector\[1\]
+
+-   To select the first element from an existing list in Python, we do this:
+
+    \`\`\`{python}
+
+    my_list\[0\]

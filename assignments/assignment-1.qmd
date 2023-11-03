@@ -10,22 +10,63 @@ My first assignment has four parts.
 
 I have found and watch this interesting [**video**](https://www.youtube.com/watch?v=jr9BhIMwTvA)about R programming language and interesting facts about it. It contains the basic features and applications of R. It also give information about the jobs that are using R and their average salaries.
 
-## (b) 
+## (b)
 
 -   The first thing that caught my attention was the difference between th R programming language and the Python programming language is that in R, when you want to acces the elements in a sequence, you need to start counting from one, but for Python, you need to start counting from zero. That is, for R the first element is at position one, but for Python the first element is at position zero.
 
 -   For example Let's say we have a vector in R and we named it my_vector. What we need to do to select the first element in this vector :
 
-    <code></code>
+    -   indexing in R
 
-    my_vector\[1\]
-
-    <code></code>
+        ```{r}
+        my_vector[1]
+        ```
 
 -   To select the first element from an existing list in Python, we do this:
 
-    <code></code>
+    ```{python}
+    my_list[0]
+    ```
 
-    my_list\[0\]
+-   Programming Style
 
-    <code></code>
+    -   R is great for statistics and data analysis, while Python's versatility makes it a popular choice for a wide range of programming tasks.
+
+        R is predominantly used for statistical analysis, data manipulation, and data visualization. It has a rich ecosystem of statistical packages and libraries like ggplot2 for data visualization and dplyr for data manipulation. R is a top choice for statisticians and data analysts.
+
+    -   Python, on the other hand, is a general-purpose programming language with a wide range of applications. While Python is also used for data analysis and statistics (thanks to libraries like NumPy, pandas, and matplotlib), it's not limited to these domains. Python is a versatile language used in web development, machine learning, automation, scientific computing, and more.
+
+    -   Suppose you want to perform a simple task like calculating the sum of numbers from 1 to 5.
+
+        In R, you might do it like this:
+
+        ```{r}
+        result <- sum(1:5) print(result)
+
+        ```
+
+        In Python, it could be done as follows:
+
+        ```{python}
+        result = sum(range(1, 6)) print(result)
+        ```
+
+    -   This example illustrates that both R and Python can handle basic mathematical operations, but Python's versatility makes it suitable for a broader range of tasks beyond statistics.
+
+-   Another difference is that R uses a specific environment for statistical analysis, while Python has a broader ecosystem
+
+Example:
+In R, you might use the built-in "lm" function for linear regression:
+
+```{r}
+model <- lm(y ~ x, data=my_data)
+
+```
+
+In Python, you could use the "scikit-learn" library for the same task:
+
+```{python}
+from sklearn.linear_model import LinearRegression
+model = LinearRegression().fit(X, y)
+
+```

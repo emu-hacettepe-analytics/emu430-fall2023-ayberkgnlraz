@@ -58,10 +58,7 @@ I have found and watch this interesting [**video**](https://www.youtube.com/watc
 Example:
 In R, you might use the built-in "lm" function for linear regression:
 
-```{r}
-model <- lm(y ~ x, data=my_data)
-
-```
+`r model <- lm(y ~ x, data=my_data)`
 
 In Python, you could use the "scikit-learn" library for the same task:
 

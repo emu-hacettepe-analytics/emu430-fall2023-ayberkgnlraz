@@ -19,13 +19,13 @@ I have found and watch this interesting [**video**](https://www.youtube.com/watc
     -   indexing in R
 
         ```{r}
-        my_vector[1]
+       #### my_vector[1]
         ```
 
 -   To select the first element from an existing list in Python, we do this:
 
     ```{python}
-    my_list[0]
+    #### my_list[0]
     ```
 
 -   Programming Style
@@ -41,14 +41,14 @@ I have found and watch this interesting [**video**](https://www.youtube.com/watc
         In R, you might do it like this:
 
         ```{r}
-        result <- sum(1:5) print(result)
+        #### result <- sum(1:5) print(result)
 
         ```
 
         In Python, it could be done as follows:
 
         ```{python}
-        result = sum(range(1, 6)) print(result)
+        ##### result = sum(range(1, 6)) print(result)
         ```
 
     -   This example illustrates that both R and Python can handle basic mathematical operations, but Python's versatility makes it suitable for a broader range of tasks beyond statistics.
@@ -57,20 +57,26 @@ I have found and watch this interesting [**video**](https://www.youtube.com/watc
 
 Example: In R, you might use the built-in "lm" function for linear regression:
 
-`r model <- lm(y ~ x, data=my_data)`
+`##### r model <- lm(y ~ x, data=my_data)`
 
 In Python, you could use the "scikit-learn" library for the same task:
 
 ```{python}
-from sklearn.linear_model import LinearRegression
-model = LinearRegression().fit(X, y)
+ #### from sklearn.linear_model import LinearRegression
+#### model = LinearRegression().fit(X, y)
 
 ```
 
-## (c) 
-
-install.packages("dslabs")
+## (c)
 
 library(dslabs)
 
-data(na_example)
+head("na_example")
+
+print(na_example)
+sum(is.na(na_example))
+
+no_na_example<-ifelse(is.na(na_example),0,na_example) 
+
+print(no_na_example)
+sum(is.na(no_na_example))

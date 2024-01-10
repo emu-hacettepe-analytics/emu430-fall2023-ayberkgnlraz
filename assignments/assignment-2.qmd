@@ -1,8 +1,8 @@
 ---
-title: "Assignment 2"
+title: "Assignment 2 (Web Scraping of Turkish Movies form IMDb)"
 ---
 
-# Assignment 2 (Web Scraping of Turkish Movies form IMDb)
+# Firt Url that contains recent movies ( 2010-2023)
 
 For the start of my work i follow the instructions on the assignment to achieve necessary page and its url.
 
@@ -36,8 +36,7 @@ year1 <- read_html(url1) %>%
 duration1 <- read_html(url1) %>%
   html_elements(".dli-title-metadata-item:nth-child(2)") %>%
   html_text()
-duration1 <- unlist(lapply(duration1, convert_time))
-print(duration1)
+
 
 # scraping rating 
 rating1 <- read_html(url1) %>%
@@ -81,3 +80,98 @@ if (length(title1) == length(year1) &&
   print("Error: Vectors have different lengths.")
 }
 ```
+## Thoughts for the first part
+ 
+ My R studio is warning me with so much error that i couldn't figure out why. Sorry for the unAesthetic format but that was the data scraping for All Turkish movies with more than 2500 votes between years 2010 and 2023. 
+ 
+## Data Visulialization part
+ 
+ I wanted to see the movie's rating distributions. So i created a histogram that helps to see the which rating points are most given to these movies. 
+ 
+```{r}
+#
+
+library(ggplot2)
+
+# Histogram of ratings with custom x-axis ticks
+ggplot(movie_list, aes(x = rating)) +
+  geom_histogram(binwidth = 0.5, fill = "skyblue", color = "black", alpha = 0.7) +
+  scale_x_continuous(breaks = seq(1, 10, 1)) +
+  labs(title = "Distribution of Ratings for 249 Movies",
+       x = "Rating",
+       y = "Frequency")
+
+
+```
+## Descending order by ratings
+```{r}
+movie_list_descending <- movie_list %>% arrange(desc(rating))
+print(movie_list_descending)
+```
+## Ratings over the years
+```{r}
+
+
+rating_avg <- movie_list %>%
+  group_by(year) %>%
+  summarise(avg_rating = mean(rating, na.rm = TRUE),
+            num_movies = n())
+
+# scatter plot
+ggplot(rating_avg, aes(x = year, y = avg_rating, size = num_movies)) +
+  geom_point() +
+  labs(title = "Yearly Rating Averages and Number of Movies",
+       x = "Year",
+       y = "Average Rating",
+       size = "Number of Movies")
+
+# plot number of movies over the years
+ggplot(rating_avg, aes(x = year, y = num_movies)) +
+  geom_point() +
+  labs(title = "Number of Movies Over the Years",
+       x = "Year",
+       y = "Number of Movies")
+
+# box plots of ratings over the years
+ggplot(movie_list, aes(x = as.factor(year), y = rating)) +
+  geom_boxplot() +
+  labs(title = "Box Plots of Ratings Over the Years",
+       x = "Year",
+       y = "Rating")
+
+```
+## Correlation between Votes and Ratings.
+```{r}
+correlation <- cor(movie_list$votes, movie_list$rating, use = "complete.obs")
+
+print(correlation)
+
+```
+Honestly, i always thought that when the vote is getting higher, it is harder to maintain a good rating. Becasue it means that movie is popular and everyone started to give vote. When the vote is getting higher, some people may give 1 star just to do it. But for this study , correlation between votes and ratings is 0.08563462 which means that there are not a negative relationship between this two variables.
+## Correlation between Duration  and Ratings.
+```{r}
+# Converting durations to a numeric value (i remember to do it really late i know sorry :( ))
+
+convert_duration <- function(duration) {
+  parts <- strsplit(duration, "h|m")
+  hours <- as.numeric(parts[[1]][1])
+  minutes <- as.numeric(parts[[1]][2])
+  total_minutes <- hours * 60 + minutes
+  return(total_minutes)
+}
+
+
+movie_list <- movie_list %>%
+  mutate(duration_numeric = sapply(movie_list$duration, convert_duration))
+
+# correlation between numeric Duration and Ratings
+correlation_duration_rating <- cor(movie_list$duration_numeric, movie_list$rating, use = "complete.obs")
+
+
+print(correlation_duration_rating)
+
+
+```
+I remember that i forgot to change durations to a numeric value.I have now done that . (a bit late i know sorry)
+Correalation is 0.304189. which means that there is a positive correlation but i think it is relatively a weak correlation. 
+ 

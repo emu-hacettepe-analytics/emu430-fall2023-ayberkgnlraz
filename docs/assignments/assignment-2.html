@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>[Student/Group Full Name]’s Analytics Lab - Assignment 2</title>
+<title>Ayberk Gönülrazı’s Analytics Lab - Assignment 2 (Web Scraping of Turkish Movies form IMDb)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">[Student/Group Full Name]’s Analytics Lab</span>
+    <span class="navbar-title">Ayberk Gönülrazı’s Analytics Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -147,9 +147,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://linkedin.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/ayberkgnlraz" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.instagram.com/ayberkgnlraz/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/ayberk-g%C3%B6n%C3%BClraz%C4%B1-50a1141b7/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -160,7 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-2.html">Assignment 2</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-2.html">Assignment 2 (Web Scraping of Turkish Movies form IMDb)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -195,7 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../assignments/assignment-2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Assignment 2</span></a>
+ <span class="menu-text">Assignment 2 (Web Scraping of Turkish Movies form IMDb)</span></a>
   </div>
 </li>
     </ul>
@@ -204,7 +204,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assignment-2" id="toc-assignment-2" class="nav-link active" data-scroll-target="#assignment-2">Assignment 2</a></li>
+  <li><a href="#firt-url-that-contains-recent-movies-2010-2023" id="toc-firt-url-that-contains-recent-movies-2010-2023" class="nav-link active" data-scroll-target="#firt-url-that-contains-recent-movies-2010-2023">Firt Url that contains recent movies ( 2010-2023)</a>
+  <ul class="collapse">
+  <li><a href="#thoughts-for-the-first-part" id="toc-thoughts-for-the-first-part" class="nav-link" data-scroll-target="#thoughts-for-the-first-part">Thoughts for the first part</a></li>
+  <li><a href="#data-visulialization-part" id="toc-data-visulialization-part" class="nav-link" data-scroll-target="#data-visulialization-part">Data Visulialization part</a></li>
+  <li><a href="#descending-order-by-ratings" id="toc-descending-order-by-ratings" class="nav-link" data-scroll-target="#descending-order-by-ratings">Descending order by ratings</a></li>
+  <li><a href="#ratings-over-the-years" id="toc-ratings-over-the-years" class="nav-link" data-scroll-target="#ratings-over-the-years">Ratings over the years</a></li>
+  <li><a href="#correlation-between-votes-and-ratings." id="toc-correlation-between-votes-and-ratings." class="nav-link" data-scroll-target="#correlation-between-votes-and-ratings.">Correlation between Votes and Ratings.</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -217,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 2</h1>
+<h1 class="title">Assignment 2 (Web Scraping of Turkish Movies form IMDb)</h1>
 </div>
 
 
@@ -232,16 +239,1003 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="assignment-2" class="level1">
-<h1>Assignment 2</h1>
+<section id="firt-url-that-contains-recent-movies-2010-2023" class="level1">
+<h1>Firt Url that contains recent movies ( 2010-2023)</h1>
+<p>For the start of my work i follow the instructions on the assignment to achieve necessary page and its url.</p>
+<p>I also wathched tutorials for this project on youtube. I started with the loading necessary libraries . I also used google extension named selector gadget.</p>
+<p>I started with the first url that containts more recent movies (2010-2023).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'rvest' was built under R version 4.3.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tibble' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'stringr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'forcats' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ forcats   1.0.0     ✔ readr     2.1.4
+✔ ggplot2   3.4.4     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.0</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()         masks stats::filter()
+✖ readr::guess_encoding() masks rvest::guess_encoding()
+✖ dplyr::lag()            masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># our first url </span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>url1 <span class="ot">=</span> <span class="st">"https://m.imdb.com/search/title/?title_type=feature&amp;release_date=2010-01-01,2023-12-31&amp;num_votes=2500,&amp;country_of_origin=TR&amp;count=250"</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co"># scraping the movie titles</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>title1 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url1) <span class="sc">%&gt;%</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_elements</span>(<span class="st">".ipc-title__text"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>()</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>title1 <span class="ot">&lt;-</span> <span class="fu">tail</span>(<span class="fu">head</span>(title1,<span class="sc">-</span><span class="dv">1</span>),<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>title1 <span class="ot">&lt;-</span> <span class="fu">str_split</span>(title1, <span class="st">" "</span>, <span class="at">n=</span><span class="dv">2</span>)</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>title1 <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">lapply</span>(title1, <span class="cf">function</span>(x) {x[<span class="dv">2</span>]}))</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(title1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>  [1] "Kuru Otlar Üstüne"                           
+  [2] "Siccîn"                                      
+  [3] "Istanbul Için Son Çagri"                     
+  [4] "Siccin 2"                                    
+  [5] "Bihter"                                      
+  [6] "Yedinci Kogustaki Mucize"                    
+  [7] "Ölümlü Dünya 2"                              
+  [8] "Kis Uykusu"                                  
+  [9] "Ayla: The Daughter of War"                   
+ [10] "Ahlat Agaci"                                 
+ [11] "Mucize"                                      
+ [12] "Do Not Disturb"                              
+ [13] "Dabbe: Cin Çarpmasi"                         
+ [14] "Bir Zamanlar Anadolu'da"                     
+ [15] "Kurak Günler"                                
+ [16] "Baskin"                                      
+ [17] "Siccîn 3: Cürmü Ask"                         
+ [18] "Ölümlü Dünya"                                
+ [19] "Sen Inandir"                                 
+ [20] "Dag II"                                      
+ [21] "Kedi"                                        
+ [22] "Mucize 2: Ask"                               
+ [23] "Yilbasi Gecesi"                              
+ [24] "Dabbe: Zehr-i Cin"                           
+ [25] "Boga Boga"                                   
+ [26] "Yeralti"                                     
+ [27] "Deliler"                                     
+ [28] "Kor"                                         
+ [29] "Fort Bliss"                                  
+ [30] "Iyi Adamin 10 Günü"                          
+ [31] "The Ottoman Lieutenant"                      
+ [32] "Fetih 1453"                                  
+ [33] "Bergen"                                      
+ [34] "Ask Taktikleri"                              
+ [35] "Su ve Ates"                                  
+ [36] "Aile Arasinda"                               
+ [37] "CM101MMXI Fundamentals"                      
+ [38] "Dabbe (Dab6e)"                               
+ [39] "Bursa Bülbülü"                               
+ [40] "Dag"                                         
+ [41] "Cinayet Süsü"                                
+ [42] "Recep Ivedik 7"                              
+ [43] "Illegal Hayatlar"                            
+ [44] "Arif V 216"                                  
+ [45] "Güzelligin Portresi"                         
+ [46] "Bulanti"                                     
+ [47] "Bizim Için Sampiyon"                         
+ [48] "Av Mevsimi"                                  
+ [49] "Kelebekler"                                  
+ [50] "Türk Isi Dondurma"                           
+ [51] "Kelebegin Rüyasi"                            
+ [52] "Müslüm"                                      
+ [53] "Kagittan Hayatlar"                           
+ [54] "Bi Küçük Eylül Meselesi"                     
+ [55] "Tereddüt"                                    
+ [56] "Sarmasik"                                    
+ [57] "Ikimizin Yerine"                             
+ [58] "Cici"                                        
+ [59] "Organize Isler: Sazan Sarmali"               
+ [60] "Limonata"                                    
+ [61] "Bir Ask Iki Hayat"                           
+ [62] "Sadece Sen"                                  
+ [63] "Aaahh Belinda"                               
+ [64] "Senden Bana Kalan"                           
+ [65] "Unutursam Fisilda"                           
+ [66] "Cep Herkülü: Naim Süleymanoglu"              
+ [67] "D@bbe: Bir Cin Vakasi"                       
+ [68] "Geçen Yaz"                                   
+ [69] "Kolpaçino: Bomba"                            
+ [70] "Ask Tesadüfleri Sever"                       
+ [71] "Kiz Kardesler"                               
+ [72] "Recep Ivedik 3"                              
+ [73] "Kötü Kedi Serafettin"                        
+ [74] "Reis"                                        
+ [75] "Sen Yasamaya Bak"                            
+ [76] "Kaybedenler Kulübü"                          
+ [77] "Kar ve Ayi"                                  
+ [78] "Börü"                                        
+ [79] "Çakallarla Dans 6"                           
+ [80] "Annemin Yarasi"                              
+ [81] "Aci Tatli Eksi"                              
+ [82] "Insanlar Ikiye Ayrilir"                      
+ [83] "Can Feda"                                    
+ [84] "Eyyvah Eyvah"                                
+ [85] "Deli Ask"                                    
+ [86] "Pek Yakinda"                                 
+ [87] "Aykut Eniste"                                
+ [88] "Kin"                                         
+ [89] "Kolonya Cumhuriyeti"                         
+ [90] "Yolun Açik Olsun"                            
+ [91] "Mutluluk Zamani"                             
+ [92] "Nuh Tepesi"                                  
+ [93] "Delibal"                                     
+ [94] "Ise Yarar Bir Sey"                           
+ [95] "Kurtlar Vadisi: Vatan"                       
+ [96] "Babamin Kemani"                              
+ [97] "Dedemin Insanlari"                           
+ [98] "Okul tirasi"                                 
+ [99] "Hedefim Sensin"                              
+[100] "Behzat Ç.: Seni Kalbime Gömdüm"              
+[101] "Cebimdeki Yabanci"                           
+[102] "Görümce"                                     
+[103] "Sevimli Tehlikeli"                           
+[104] "Karakomik Filmler: Kaçamak"                  
+[105] "Asiklar Bayrami"                             
+[106] "Aykut Eniste 2"                              
+[107] "Beni Çok Sev"                                
+[108] "Biz Böyleyiz"                                
+[109] "Itirazim Var"                                
+[110] "Deliha 2"                                    
+[111] "Incir Reçeli"                                
+[112] "Karakomik Filmler: 2 Arada"                  
+[113] "Evim Sensin"                                 
+[114] "Fakat Müzeyyen Bu Derin Bir Tutku"           
+[115] "Enes Batur Hayal mi Gerçek mi?"              
+[116] "Anadolu Kartallari"                          
+[117] "Ask Tesadüfleri Sever 2"                     
+[118] "Panzehir"                                    
+[119] "Dügün Dernek 2: Sünnet"                      
+[120] "Bana Masal Anlatma"                          
+[121] "Hadi Be Oglum"                               
+[122] "Bayi Toplantisi"                             
+[123] "Ask Sana Benzer"                             
+[124] "Dügün Dernek"                                
+[125] "Karakomik Filmler: Deli"                     
+[126] "Çok Filim Hareketler Bunlar"                 
+[127] "Eltilerin Savasi"                            
+[128] "Çiçero"                                      
+[129] "New York'ta Bes Minare"                      
+[130] "Daha"                                        
+[131] "Bir Baba Hindu"                              
+[132] "Azizler"                                     
+[133] "Bizans Oyunlari: Geym of Bizans"             
+[134] "Recep Ivedik 4"                              
+[135] "Ali Baba ve 7 Cüceler"                       
+[136] "Kolpaçino 3. Devre"                          
+[137] "Yarina Tek Bilet"                            
+[138] "Sen Aydinlatirsin Geceyi"                    
+[139] "Sibel"                                       
+[140] "Kocan Kadar Konus"                           
+[141] "Abluka"                                      
+[142] "Sen Hiç Ates Böcegi Gördün Mü?"              
+[143] "Cingöz Recai"                                
+[144] "Zaman Makinesi 1973"                         
+[145] "Tamam miyiz?"                                
+[146] "Kardesim Benim"                              
+[147] "Recep Ivedik 6"                              
+[148] "Baba Parasi"                                 
+[149] "Istanbul Kirmizisi"                          
+[150] "Sen Kimsin?"                                 
+[151] "Celal ile Ceren"                             
+[152] "Selam: Bahara Yolculuk"                      
+[153] "Cumali Ceber 2"                              
+[154] "Iyi Oyun"                                    
+[155] "Iftarlik Gazoz"                              
+[156] "Recep Ivedik 5"                              
+[157] "Kaybedenler Kulübü Yolda"                    
+[158] "Çogunluk"                                    
+[159] "Deliha"                                      
+[160] "Behzat Ç. Ankara Yaniyor"                    
+[161] "Olanlar Oldu"                                
+[162] "Karakomik Filmler: Emanet"                   
+[163] "Tatlim Tatlim"                               
+[164] "Eyyvah Eyvah 3"                              
+[165] "Benim Dünyam"                                
+[166] "Bal"                                         
+[167] "Incir Reçeli 2"                              
+[168] "Eksi Elmalar"                                
+[169] "Sag Salim"                                   
+[170] "Kutsal Damacana 2: Itmen"                    
+[171] "Selam"                                       
+[172] "Veda"                                        
+[173] "Ay Lav Yu"                                   
+[174] "Sonsuz Ask"                                  
+[175] "Ailecek Saskiniz"                            
+[176] "Kara Bela"                                   
+[177] "Vay Arkadas"                                 
+[178] "Osman Pazarlama"                             
+[179] "Tepenin Ardi"                                
+[180] "9 Kere Leyla"                                
+[181] "Kaçma Birader"                               
+[182] "Çanakkale Yolun Sonu"                        
+[183] "Romantik Komedi 2: Bekarliga Veda"           
+[184] "Zenne Dancer"                                
+[185] "Yol Arkadasim"                               
+[186] "Sofra Sirlari"                               
+[187] "Ejder Kapani"                                
+[188] "Gözetleme Kulesi"                            
+[189] "Yol Ayrimi"                                  
+[190] "Nadide Hayat"                                
+[191] "Kocan Kadar Konus: Dirilis"                  
+[192] "Kayhan"                                      
+[193] "Küçük Esnaf"                                 
+[194] "Bizi Hatirla"                                
+[195] "Cumali Ceber: Allah Seni Alsin"              
+[196] "Bizim Hikaye"                                
+[197] "Bizim Büyük Çaresizligimiz"                  
+[198] "Hükümet Kadin"                               
+[199] "Dedemin Fisi"                                
+[200] "Hababam Sinifi Yeniden"                      
+[201] "Içimdeki Ses"                                
+[202] "Ali Kundilli"                                
+[203] "Romantik Komedi"                             
+[204] "Celal Tan ve Ailesinin Asiri Acikli Hikayesi"
+[205] "Çakallarla Dans 4"                           
+[206] "Kötü Çocuk"                                  
+[207] "Çalgi Çengi"                                 
+[208] "Birlesen Gönüller"                           
+[209] "Çakallarla Dans 5"                           
+[210] "Yol Arkadasim 2"                             
+[211] "Mandira Filozofu"                            
+[212] "Yozgat Blues"                                
+[213] "Yok Artik"                                   
+[214] "Kafalar Karisik"                             
+[215] "Eyyvah Eyvah 2"                              
+[216] "Alamet-i Kiyamet"                            
+[217] "Gise Memuru"                                 
+[218] "Müjde"                                       
+[219] "Niyazi Gül Dörtnala"                         
+[220] "G.D.O. Kara Kedi"                            
+[221] "Sen Benim HerSeyimsin"                       
+[222] "Çakallarla Dans"                             
+[223] "Uzun Hikâye"                                 
+[224] "Kurtlar Vadisi: Filistin"                    
+[225] "Sen Kiminle Dans Ediyorsun"                  
+[226] "Borç Harç"                                   
+[227] "Kurtulus Son Durak"                          
+[228] "Resistance Is Life"                          
+[229] "Sag Salim 2: Sil Bastan"                     
+[230] "Sümela'nin Sifresi: Temel"                   
+[231] "Çakallarla Dans 3: Sifir Sikinti"            
+[232] "Ya Sonra"                                    
+[233] "Enes Batur Gerçek Kahraman"                  
+[234] "Hadi Insallah"                               
+[235] "Berlin Kaplani"                              
+[236] "Patron Mutlu Son Istiyor"                    
+[237] "Sihirbazlik Okulunda Bir Türk"               
+[238] "Entelköy Efeköy'e Karsi"                     
+[239] "Açela"                                       
+[240] "15/07 Safak Vakti"                           
+[241] "Hür Adam: Bediüzzaman Said Nursi"            
+[242] "Hükümet Kadin 2"                             
+[243] "Çalgi Çengi Ikimiz"                          
+[244] "Çakallarla Dans 2: Hastasiyiz Dede"          
+[245] "Kod Adi K.O.Z."                              
+[246] "OHA Diyorum"                                 
+[247] "Sabit Kanca"                                 
+[248] "Deniz ve Günes"                              
+[249] "Guardian of Angels"                          </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>year1 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url1) <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_elements</span>(<span class="st">".dli-title-metadata-item:nth-child(1)"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>()</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>duration1 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url1) <span class="sc">%&gt;%</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_elements</span>(<span class="st">".dli-title-metadata-item:nth-child(2)"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>()</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="co"># scraping rating </span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>rating1 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url1) <span class="sc">%&gt;%</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_elements</span>(<span class="st">".ratingGroup--imdb-rating"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>()</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="co"># I struggled something here so i searched and find a solution. This code somehow is making sure that there are no NAs to stopping us even if there are any. (If the code is working, do not touch, right? :)) </span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>rating1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">str_extract</span>(rating1, <span class="st">"</span><span class="sc">\\</span><span class="st">d+</span><span class="sc">\\</span><span class="st">.</span><span class="sc">\\</span><span class="st">d+"</span>))</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a><span class="co"># scraping votes </span></span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>votes1 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url1) <span class="sc">%&gt;%</span></span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_elements</span>(<span class="st">".kRnqtn"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>()</span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a><span class="co">#  scrapped  text and converting it to numeric</span></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>votes1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, votes1))</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking the length of all vectors</span></span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">length</span>(title1) <span class="sc">==</span> <span class="fu">length</span>(year1) <span class="sc">&amp;&amp;</span></span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(title1) <span class="sc">==</span> <span class="fu">length</span>(duration1) <span class="sc">&amp;&amp;</span></span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(title1) <span class="sc">==</span> <span class="fu">length</span>(rating1) <span class="sc">&amp;&amp;</span></span>
+<span id="cb22-35"><a href="#cb22-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(title1) <span class="sc">==</span> <span class="fu">length</span>(votes1)) {</span>
+<span id="cb22-36"><a href="#cb22-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-37"><a href="#cb22-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Finally we are creating our data frame to see if it works</span></span>
+<span id="cb22-38"><a href="#cb22-38" aria-hidden="true" tabindex="-1"></a>  movie_list <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> title1,</span>
+<span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">year =</span> year1,</span>
+<span id="cb22-41"><a href="#cb22-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">duration =</span> duration1,</span>
+<span id="cb22-42"><a href="#cb22-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">rating =</span> rating1,</span>
+<span id="cb22-43"><a href="#cb22-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">votes =</span> votes1</span>
+<span id="cb22-44"><a href="#cb22-44" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb22-45"><a href="#cb22-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-46"><a href="#cb22-46" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Here is the list of all movies between 2010-2023</span></span>
+<span id="cb22-47"><a href="#cb22-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(movie_list)</span>
+<span id="cb22-48"><a href="#cb22-48" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb22-49"><a href="#cb22-49" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if vector lengths did not become same</span></span>
+<span id="cb22-50"><a href="#cb22-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Error: Vectors have different lengths."</span>)</span>
+<span id="cb22-51"><a href="#cb22-51" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                           title year duration rating  votes
+1                              Kuru Otlar Üstüne 2023   3h 17m    8.1   5337
+2                                         Siccîn 2014   1h 36m    6.0   5102
+3                        Istanbul Için Son Çagri 2023   1h 31m    5.3   7745
+4                                       Siccin 2 2015   1h 33m    6.1   3743
+5                                         Bihter 2023   1h 53m    3.6   3444
+6                       Yedinci Kogustaki Mucize 2019   2h 12m    8.2  54352
+7                                 Ölümlü Dünya 2 2023   1h 57m    7.4   3913
+8                                     Kis Uykusu 2014   3h 16m    8.0  54772
+9                      Ayla: The Daughter of War 2017    2h 5m    8.3  43088
+10                                   Ahlat Agaci 2018    3h 8m    8.0  27128
+11                                        Mucize 2015   2h 16m    7.6  13943
+12                                Do Not Disturb 2023   1h 54m    6.3   8958
+13                           Dabbe: Cin Çarpmasi 2013   2h 14m    6.8   7160
+14                       Bir Zamanlar Anadolu'da 2011   2h 37m    7.8  49486
+15                                  Kurak Günler 2022    2h 9m    7.6  11297
+16                                        Baskin 2015   1h 37m    5.8  12143
+17                           Siccîn 3: Cürmü Ask 2016   1h 50m    6.1   3041
+18                                  Ölümlü Dünya 2018   1h 47m    7.6  30443
+19                                   Sen Inandir 2023   1h 44m    5.6   2624
+20                                        Dag II 2016   2h 15m    8.2 109917
+21                                          Kedi 2016   1h 19m    7.6  15661
+22                                 Mucize 2: Ask 2019    2h 9m    7.2   2805
+23                                Yilbasi Gecesi 2022   2h 22m    5.8   4454
+24                             Dabbe: Zehr-i Cin 2014   2h 13m    5.9   4294
+25                                     Boga Boga 2023   1h 52m    5.7   4520
+26                                       Yeralti 2012   1h 47m    7.1  10186
+27                                       Deliler 2018    2h 1m    5.1   3494
+28                                           Kor 2016   1h 55m    6.4   2504
+29                                    Fort Bliss 2014   1h 56m    6.4   3511
+30                            Iyi Adamin 10 Günü 2023    2h 4m    6.5   5213
+31                        The Ottoman Lieutenant 2017   1h 46m    6.4  26568
+32                                    Fetih 1453 2012   2h 45m    6.5  58931
+33                                        Bergen 2022   2h 25m    6.9   5915
+34                                Ask Taktikleri 2022   1h 37m    5.3   5854
+35                                    Su ve Ates 2013   1h 53m    6.1   4888
+36                                 Aile Arasinda 2017    2h 4m    7.6  25742
+37                        CM101MMXI Fundamentals 2013   2h 19m    9.1  47026
+38                                 Dabbe (Dab6e) 2015   2h 40m    5.6   3193
+39                                 Bursa Bülbülü 2023       2h    6.8   6861
+40                                           Dag 2012   1h 30m    7.5  23173
+41                                  Cinayet Süsü 2019   1h 52m    6.7  19283
+42                                Recep Ivedik 7 2022   2h 13m    5.2   6508
+43                              Illegal Hayatlar 2023   1h 45m    6.2   4835
+44                                    Arif V 216 2018    2h 5m    7.0  38636
+45                           Güzelligin Portresi 2019    2h 7m    6.3   3143
+46                                       Bulanti 2015   1h 52m    6.2   2761
+47                           Bizim Için Sampiyon 2018   2h 10m    8.2  13056
+48                                    Av Mevsimi 2010   2h 20m    7.4  36317
+49                                    Kelebekler 2018   1h 57m    7.3  15915
+50                             Türk Isi Dondurma 2019       2h    6.4   5233
+51                              Kelebegin Rüyasi 2013   2h 18m    7.7  23825
+52                                        Müslüm 2018   2h 16m    7.6  19999
+53                             Kagittan Hayatlar 2021   1h 36m    6.6  13455
+54                       Bi Küçük Eylül Meselesi 2014   1h 46m    7.1  10875
+55                                      Tereddüt 2016   1h 45m    6.5   2854
+56                                      Sarmasik 2015   1h 44m    7.9  13161
+57                               Ikimizin Yerine 2016    2h 6m    6.1   7298
+58                                          Cici 2022   2h 31m    7.1   5649
+59                 Organize Isler: Sazan Sarmali 2019    2h 1m    6.0  15880
+60                                      Limonata 2015   1h 50m    7.4  14347
+61                             Bir Ask Iki Hayat 2019   1h 46m    6.1   3113
+62                                    Sadece Sen 2014   1h 45m    7.3   5956
+63                                 Aaahh Belinda 2023   1h 37m    5.3   3114
+64                             Senden Bana Kalan 2015   1h 57m    6.5   3408
+65                             Unutursam Fisilda 2014   1h 58m    7.5  13047
+66                Cep Herkülü: Naim Süleymanoglu 2019   2h 21m    8.2  13693
+67                         D@bbe: Bir Cin Vakasi 2012   1h 59m    5.8   4215
+68                                     Geçen Yaz 2021   1h 41m    6.3   3402
+69                              Kolpaçino: Bomba 2011   1h 32m    5.8   7976
+70                         Ask Tesadüfleri Sever 2011   1h 58m    7.2  19512
+71                                 Kiz Kardesler 2019   1h 48m    7.4   4682
+72                                Recep Ivedik 3 2010   1h 35m    4.2  20842
+73                          Kötü Kedi Serafettin 2016   1h 26m    7.0   8458
+74                                          Reis 2017   1h 48m    1.0  73983
+75                              Sen Yasamaya Bak 2022   1h 44m    5.7   3738
+76                            Kaybedenler Kulübü 2011   1h 45m    7.5  25170
+77                                    Kar ve Ayi 2022   1h 33m    6.6   2614
+78                                          Börü 2018   1h 51m    6.7   4663
+79                             Çakallarla Dans 6 2022   1h 56m    5.3   5282
+80                                Annemin Yarasi 2016       2h    7.3   4141
+81                                Aci Tatli Eksi 2017   1h 40m    6.0   2797
+82                        Insanlar Ikiye Ayrilir 2020   1h 41m    6.9   2546
+83                                      Can Feda 2018   1h 49m    5.5   3777
+84                                  Eyyvah Eyvah 2010   1h 44m    7.0  21482
+85                                      Deli Ask 2017   1h 44m    5.5   3135
+86                                   Pek Yakinda 2014   2h 14m    7.3  35496
+87                                  Aykut Eniste 2019   1h 55m    7.0   7432
+88                                           Kin 2021   1h 45m    5.5   4797
+89                           Kolonya Cumhuriyeti 2017   1h 50m    5.8   5400
+90                              Yolun Açik Olsun 2022   1h 59m    6.5   2716
+91                               Mutluluk Zamani 2017   1h 48m    5.9   5777
+92                                    Nuh Tepesi 2019   1h 49m    7.1   6329
+93                                       Delibal 2015   1h 57m    6.7  12151
+94                             Ise Yarar Bir Sey 2017   1h 44m    7.6   5526
+95                         Kurtlar Vadisi: Vatan 2017   1h 45m    3.9   3339
+96                                Babamin Kemani 2022   1h 52m    6.4   4022
+97                             Dedemin Insanlari 2011    2h 6m    8.0  11233
+98                                   Okul tirasi 2021   1h 25m    7.4   2977
+99                                Hedefim Sensin 2018   1h 53m    6.2   5006
+100               Behzat Ç.: Seni Kalbime Gömdüm 2011   1h 50m    7.5  10408
+101                            Cebimdeki Yabanci 2018   1h 35m    6.8   9454
+102                                      Görümce 2016   1h 49m    5.0   3483
+103                            Sevimli Tehlikeli 2015   1h 53m    6.0   3858
+104                   Karakomik Filmler: Kaçamak 2019       1h    5.5  10496
+105                              Asiklar Bayrami 2022   1h 42m    5.7   3015
+106                               Aykut Eniste 2 2021   1h 55m    6.5   3607
+107                                 Beni Çok Sev 2021    2h 4m    7.0   3114
+108                                 Biz Böyleyiz 2020    2h 1m    5.6   5821
+109                                 Itirazim Var 2014   1h 50m    7.7  13687
+110                                     Deliha 2 2018   1h 46m    4.7   2838
+111                                 Incir Reçeli 2011   1h 34m    6.5  14147
+112                   Karakomik Filmler: 2 Arada 2019       1h    6.4  13439
+113                                  Evim Sensin 2012   1h 31m    5.0   6105
+114            Fakat Müzeyyen Bu Derin Bir Tutku 2014   1h 46m    6.6   3745
+115               Enes Batur Hayal mi Gerçek mi? 2018   1h 50m    2.0  55901
+116                           Anadolu Kartallari 2011       2h    6.2   5648
+117                      Ask Tesadüfleri Sever 2 2020    2h 4m    7.1   3220
+118                                     Panzehir 2014    2h 5m    6.9   4073
+119                       Dügün Dernek 2: Sünnet 2015   1h 52m    6.3  11203
+120                           Bana Masal Anlatma 2015   1h 43m    7.3  16492
+121                                Hadi Be Oglum 2018   1h 52m    7.0   3796
+122                              Bayi Toplantisi 2020   1h 54m    4.6   4222
+123                              Ask Sana Benzer 2015   1h 55m    3.7   3530
+124                                 Dügün Dernek 2013   1h 46m    6.9  23563
+125                      Karakomik Filmler: Deli 2020       1h    6.5   9168
+126                  Çok Filim Hareketler Bunlar 2010   1h 44m    4.5   5170
+127                             Eltilerin Savasi 2020   1h 58m    5.8   5034
+128                                       Çiçero 2019    2h 6m    6.5   6408
+129                       New York'ta Bes Minare 2010   1h 59m    5.7  15452
+130                                         Daha 2017   1h 55m    7.0   4386
+131                               Bir Baba Hindu 2016   1h 52m    2.6   2637
+132                                      Azizler 2021   1h 36m    6.0  11292
+133              Bizans Oyunlari: Geym of Bizans 2016   1h 41m    3.7   3201
+134                               Recep Ivedik 4 2014   1h 57m    3.8  18124
+135                        Ali Baba ve 7 Cüceler 2015   1h 54m    5.6  20998
+136                           Kolpaçino 3. Devre 2016   1h 33m    4.1   4882
+137                             Yarina Tek Bilet 2020   1h 30m    5.6   5430
+138                     Sen Aydinlatirsin Geceyi 2013   1h 47m    7.7  10496
+139                                        Sibel 2018   1h 35m    6.8   2885
+140                            Kocan Kadar Konus 2015   1h 48m    6.1   5436
+141                                       Abluka 2015   1h 59m    7.2   4334
+142               Sen Hiç Ates Böcegi Gördün Mü? 2021   1h 53m    6.2   5504
+143                                 Cingöz Recai 2017   1h 53m    4.8   4721
+144                          Zaman Makinesi 1973 2014   1h 45m    6.3   3275
+145                                 Tamam miyiz? 2013   1h 32m    7.0   5497
+146                               Kardesim Benim 2016       2h    5.8   5019
+147                               Recep Ivedik 6 2019   1h 50m    3.0   8681
+148                                  Baba Parasi 2020   1h 56m    4.6   3551
+149                           Istanbul Kirmizisi 2017   1h 50m    5.7   7101
+150                                  Sen Kimsin? 2012   1h 41m    5.0   5441
+151                              Celal ile Ceren 2013   1h 54m    3.1  43253
+152                       Selam: Bahara Yolculuk 2015    2h 6m    7.0   4163
+153                               Cumali Ceber 2 2018   1h 40m    1.2  10249
+154                                     Iyi Oyun 2018   1h 54m    4.6   4084
+155                               Iftarlik Gazoz 2016   1h 55m    7.3  15330
+156                               Recep Ivedik 5 2017   1h 54m    3.4  17618
+157                     Kaybedenler Kulübü Yolda 2018   1h 36m    5.7   2979
+158                                     Çogunluk 2010   1h 50m    7.4   6073
+159                                       Deliha 2014   1h 47m    4.6   4873
+160                     Behzat Ç. Ankara Yaniyor 2013   1h 37m    7.4   6870
+161                                 Olanlar Oldu 2017   1h 48m    6.2   4469
+162                    Karakomik Filmler: Emanet 2020       1h    5.6   7673
+163                                Tatlim Tatlim 2017   1h 35m    5.6   3579
+164                               Eyyvah Eyvah 3 2014   1h 45m    5.9   7934
+165                                 Benim Dünyam 2013   1h 40m    7.5   5747
+166                                          Bal 2010   1h 43m    7.1   7423
+167                               Incir Reçeli 2 2014   1h 43m    6.0   4607
+168                                 Eksi Elmalar 2016   1h 54m    7.1   7843
+169                                    Sag Salim 2012   1h 38m    6.3   6521
+170                     Kutsal Damacana 2: Itmen 2010   1h 38m    3.0   5472
+171                                        Selam 2013   1h 44m    6.2   2622
+172                                         Veda 2010   1h 54m    7.2   7493
+173                                    Ay Lav Yu 2010   1h 42m    5.5   5203
+174                                   Sonsuz Ask 2017   1h 54m    6.1   2684
+175                             Ailecek Saskiniz 2018   1h 53m    6.1   7944
+176                                    Kara Bela 2015   1h 45m    6.7   9613
+177                                  Vay Arkadas 2010   1h 40m    6.3   2605
+178                              Osman Pazarlama 2016   1h 54m    3.5   6789
+179                                 Tepenin Ardi 2012   1h 34m    7.2   3902
+180                                 9 Kere Leyla 2020   1h 52m    3.7   7882
+181                                Kaçma Birader 2016   1h 47m    6.8   3665
+182                         Çanakkale Yolun Sonu 2013   1h 41m    7.0   5101
+183            Romantik Komedi 2: Bekarliga Veda 2013   1h 45m    5.2   3579
+184                                 Zenne Dancer 2011   1h 44m    7.1   2842
+185                                Yol Arkadasim 2017   1h 55m    6.1   7512
+186                                Sofra Sirlari 2017   1h 43m    6.7   5181
+187                                 Ejder Kapani 2010   1h 45m    6.5   5516
+188                             Gözetleme Kulesi 2012   1h 36m    7.1   2844
+189                                   Yol Ayrimi 2017   2h 30m    6.6   4284
+190                                 Nadide Hayat 2015   1h 58m    6.3   3945
+191                   Kocan Kadar Konus: Dirilis 2016   1h 48m    5.7   3466
+192                                       Kayhan 2018   1h 45m    2.2   3614
+193                                  Küçük Esnaf 2016   1h 44m    5.6   4577
+194                                 Bizi Hatirla 2018       2h    7.4   2872
+195               Cumali Ceber: Allah Seni Alsin 2017   1h 40m    1.0  39273
+196                                 Bizim Hikaye 2015   1h 37m    5.4  18166
+197                   Bizim Büyük Çaresizligimiz 2011   1h 42m    6.8   4024
+198                                Hükümet Kadin 2013   1h 39m    6.5   9201
+199                                 Dedemin Fisi 2016   1h 40m    5.6   3946
+200                       Hababam Sinifi Yeniden 2019   1h 46m    2.2   3857
+201                                 Içimdeki Ses 2015   1h 33m    5.9   3573
+202                                 Ali Kundilli 2015   1h 58m    5.4   3259
+203                              Romantik Komedi 2010   1h 35m    5.3   5357
+204 Celal Tan ve Ailesinin Asiri Acikli Hikayesi 2011   1h 30m    6.4   3431
+205                            Çakallarla Dans 4 2016   1h 49m    4.1   3051
+206                                   Kötü Çocuk 2017    2h 5m    2.0   2955
+207                                  Çalgi Çengi 2011   1h 30m    7.0  13562
+208                            Birlesen Gönüller 2014    2h 6m    7.5   4131
+209                            Çakallarla Dans 5 2018   1h 42m    3.8   2575
+210                              Yol Arkadasim 2 2018   1h 56m    5.9   3753
+211                             Mandira Filozofu 2014   1h 49m    6.6   4843
+212                                 Yozgat Blues 2013   1h 33m    6.8   3523
+213                                    Yok Artik 2015   1h 39m    5.8   3935
+214                              Kafalar Karisik 2018   1h 35m    3.0   3046
+215                               Eyyvah Eyvah 2 2011   1h 46m    6.6  15390
+216                             Alamet-i Kiyamet 2016   1h 28m    4.7   2657
+217                                  Gise Memuru 2010   1h 36m    6.4   4552
+218                                        Müjde 2022      48m    1.2   9939
+219                          Niyazi Gül Dörtnala 2015   1h 46m    4.5   3459
+220                             G.D.O. Kara Kedi 2013   1h 37m    5.3   5426
+221                        Sen Benim HerSeyimsin 2016   1h 47m    6.2   2970
+222                              Çakallarla Dans 2010   1h 42m    5.6   7312
+223                                  Uzun Hikâye 2012    2h 5m    7.5   6101
+224                     Kurtlar Vadisi: Filistin 2011   1h 45m    6.1   9545
+225                   Sen Kiminle Dans Ediyorsun 2017   1h 46m    5.6   2620
+226                                    Borç Harç 2019   1h 30m    1.4   4772
+227                           Kurtulus Son Durak 2012   1h 46m    6.2   2716
+228                           Resistance Is Life 2017   1h 13m    7.7   3297
+229                      Sag Salim 2: Sil Bastan 2014   1h 38m    4.9   3486
+230                    Sümela'nin Sifresi: Temel 2011   1h 30m    3.7   3154
+231             Çakallarla Dans 3: Sifir Sikinti 2014   1h 42m    5.0   3052
+232                                     Ya Sonra 2011   1h 45m    5.2   2560
+233                   Enes Batur Gerçek Kahraman 2019   1h 39m    1.4   9548
+234                                Hadi Insallah 2014   1h 36m    5.4   4309
+235                               Berlin Kaplani 2012   1h 38m    5.2   7204
+236                     Patron Mutlu Son Istiyor 2014   1h 49m    6.0   7145
+237                Sihirbazlik Okulunda Bir Türk 2015   1h 31m    1.7   3700
+238                      Entelköy Efeköy'e Karsi 2011   1h 51m    6.6   3633
+239                                        Açela 2020   1h 10m    2.7   2671
+240                            15/07 Safak Vakti 2021   1h 35m    1.2  20609
+241             Hür Adam: Bediüzzaman Said Nursi 2011   2h 43m    4.6   3596
+242                              Hükümet Kadin 2 2013   1h 45m    6.1   5191
+243                           Çalgi Çengi Ikimiz 2017   1h 56m    5.6   4868
+244           Çakallarla Dans 2: Hastasiyiz Dede 2012   1h 41m    4.6   3956
+245                               Kod Adi K.O.Z. 2015   1h 54m    1.7  27602
+246                                  OHA Diyorum 2017   1h 30m    1.6   6968
+247                                  Sabit Kanca 2013   1h 40m    3.1   2650
+248                               Deniz ve Günes 2018   1h 36m    4.9   2641
+249                           Guardian of Angels 2018      56m    7.2   2565</code></pre>
 </div>
 </div>
+<section id="thoughts-for-the-first-part" class="level2">
+<h2 class="anchored" data-anchor-id="thoughts-for-the-first-part">Thoughts for the first part</h2>
+<p>My R studio is warning me with so much error that i couldn’t figure out why. Sorry for the unAesthetic format but that was the data scraping for All Turkish movies with more than 2500 votes between years 2010 and 2023.</p>
+</section>
+<section id="data-visulialization-part" class="level2">
+<h2 class="anchored" data-anchor-id="data-visulialization-part">Data Visulialization part</h2>
+<p>I wanted to see the movie’s rating distributions. So i created a histogram that helps to see the which rating points are most given to these movies.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of ratings with custom x-axis ticks</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(movie_list, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.5</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of Ratings for 249 Movies"</span>,</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Rating"</span>,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="descending-order-by-ratings" class="level2">
+<h2 class="anchored" data-anchor-id="descending-order-by-ratings">Descending order by ratings</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>movie_list_descending <span class="ot">&lt;-</span> movie_list <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(rating))</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(movie_list_descending)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                           title year duration rating  votes
+1                         CM101MMXI Fundamentals 2013   2h 19m    9.1  47026
+2                      Ayla: The Daughter of War 2017    2h 5m    8.3  43088
+3                       Yedinci Kogustaki Mucize 2019   2h 12m    8.2  54352
+4                                         Dag II 2016   2h 15m    8.2 109917
+5                            Bizim Için Sampiyon 2018   2h 10m    8.2  13056
+6                 Cep Herkülü: Naim Süleymanoglu 2019   2h 21m    8.2  13693
+7                              Kuru Otlar Üstüne 2023   3h 17m    8.1   5337
+8                                     Kis Uykusu 2014   3h 16m    8.0  54772
+9                                    Ahlat Agaci 2018    3h 8m    8.0  27128
+10                             Dedemin Insanlari 2011    2h 6m    8.0  11233
+11                                      Sarmasik 2015   1h 44m    7.9  13161
+12                       Bir Zamanlar Anadolu'da 2011   2h 37m    7.8  49486
+13                              Kelebegin Rüyasi 2013   2h 18m    7.7  23825
+14                                  Itirazim Var 2014   1h 50m    7.7  13687
+15                      Sen Aydinlatirsin Geceyi 2013   1h 47m    7.7  10496
+16                            Resistance Is Life 2017   1h 13m    7.7   3297
+17                                        Mucize 2015   2h 16m    7.6  13943
+18                                  Kurak Günler 2022    2h 9m    7.6  11297
+19                                  Ölümlü Dünya 2018   1h 47m    7.6  30443
+20                                          Kedi 2016   1h 19m    7.6  15661
+21                                 Aile Arasinda 2017    2h 4m    7.6  25742
+22                                        Müslüm 2018   2h 16m    7.6  19999
+23                             Ise Yarar Bir Sey 2017   1h 44m    7.6   5526
+24                                           Dag 2012   1h 30m    7.5  23173
+25                             Unutursam Fisilda 2014   1h 58m    7.5  13047
+26                            Kaybedenler Kulübü 2011   1h 45m    7.5  25170
+27                Behzat Ç.: Seni Kalbime Gömdüm 2011   1h 50m    7.5  10408
+28                                  Benim Dünyam 2013   1h 40m    7.5   5747
+29                             Birlesen Gönüller 2014    2h 6m    7.5   4131
+30                                   Uzun Hikâye 2012    2h 5m    7.5   6101
+31                                Ölümlü Dünya 2 2023   1h 57m    7.4   3913
+32                                    Av Mevsimi 2010   2h 20m    7.4  36317
+33                                      Limonata 2015   1h 50m    7.4  14347
+34                                 Kiz Kardesler 2019   1h 48m    7.4   4682
+35                                   Okul tirasi 2021   1h 25m    7.4   2977
+36                                      Çogunluk 2010   1h 50m    7.4   6073
+37                      Behzat Ç. Ankara Yaniyor 2013   1h 37m    7.4   6870
+38                                  Bizi Hatirla 2018       2h    7.4   2872
+39                                    Kelebekler 2018   1h 57m    7.3  15915
+40                                    Sadece Sen 2014   1h 45m    7.3   5956
+41                                Annemin Yarasi 2016       2h    7.3   4141
+42                                   Pek Yakinda 2014   2h 14m    7.3  35496
+43                            Bana Masal Anlatma 2015   1h 43m    7.3  16492
+44                                Iftarlik Gazoz 2016   1h 55m    7.3  15330
+45                                 Mucize 2: Ask 2019    2h 9m    7.2   2805
+46                         Ask Tesadüfleri Sever 2011   1h 58m    7.2  19512
+47                                        Abluka 2015   1h 59m    7.2   4334
+48                                          Veda 2010   1h 54m    7.2   7493
+49                                  Tepenin Ardi 2012   1h 34m    7.2   3902
+50                            Guardian of Angels 2018      56m    7.2   2565
+51                                       Yeralti 2012   1h 47m    7.1  10186
+52                       Bi Küçük Eylül Meselesi 2014   1h 46m    7.1  10875
+53                                          Cici 2022   2h 31m    7.1   5649
+54                                    Nuh Tepesi 2019   1h 49m    7.1   6329
+55                       Ask Tesadüfleri Sever 2 2020    2h 4m    7.1   3220
+56                                           Bal 2010   1h 43m    7.1   7423
+57                                  Eksi Elmalar 2016   1h 54m    7.1   7843
+58                                  Zenne Dancer 2011   1h 44m    7.1   2842
+59                              Gözetleme Kulesi 2012   1h 36m    7.1   2844
+60                                    Arif V 216 2018    2h 5m    7.0  38636
+61                          Kötü Kedi Serafettin 2016   1h 26m    7.0   8458
+62                                  Eyyvah Eyvah 2010   1h 44m    7.0  21482
+63                                  Aykut Eniste 2019   1h 55m    7.0   7432
+64                                  Beni Çok Sev 2021    2h 4m    7.0   3114
+65                                 Hadi Be Oglum 2018   1h 52m    7.0   3796
+66                                          Daha 2017   1h 55m    7.0   4386
+67                                  Tamam miyiz? 2013   1h 32m    7.0   5497
+68                        Selam: Bahara Yolculuk 2015    2h 6m    7.0   4163
+69                          Çanakkale Yolun Sonu 2013   1h 41m    7.0   5101
+70                                   Çalgi Çengi 2011   1h 30m    7.0  13562
+71                                        Bergen 2022   2h 25m    6.9   5915
+72                        Insanlar Ikiye Ayrilir 2020   1h 41m    6.9   2546
+73                                      Panzehir 2014    2h 5m    6.9   4073
+74                                  Dügün Dernek 2013   1h 46m    6.9  23563
+75                           Dabbe: Cin Çarpmasi 2013   2h 14m    6.8   7160
+76                                 Bursa Bülbülü 2023       2h    6.8   6861
+77                             Cebimdeki Yabanci 2018   1h 35m    6.8   9454
+78                                         Sibel 2018   1h 35m    6.8   2885
+79                                 Kaçma Birader 2016   1h 47m    6.8   3665
+80                    Bizim Büyük Çaresizligimiz 2011   1h 42m    6.8   4024
+81                                  Yozgat Blues 2013   1h 33m    6.8   3523
+82                                  Cinayet Süsü 2019   1h 52m    6.7  19283
+83                                          Börü 2018   1h 51m    6.7   4663
+84                                       Delibal 2015   1h 57m    6.7  12151
+85                                     Kara Bela 2015   1h 45m    6.7   9613
+86                                 Sofra Sirlari 2017   1h 43m    6.7   5181
+87                             Kagittan Hayatlar 2021   1h 36m    6.6  13455
+88                                    Kar ve Ayi 2022   1h 33m    6.6   2614
+89             Fakat Müzeyyen Bu Derin Bir Tutku 2014   1h 46m    6.6   3745
+90                                    Yol Ayrimi 2017   2h 30m    6.6   4284
+91                              Mandira Filozofu 2014   1h 49m    6.6   4843
+92                                Eyyvah Eyvah 2 2011   1h 46m    6.6  15390
+93                       Entelköy Efeköy'e Karsi 2011   1h 51m    6.6   3633
+94                            Iyi Adamin 10 Günü 2023    2h 4m    6.5   5213
+95                                    Fetih 1453 2012   2h 45m    6.5  58931
+96                                      Tereddüt 2016   1h 45m    6.5   2854
+97                             Senden Bana Kalan 2015   1h 57m    6.5   3408
+98                              Yolun Açik Olsun 2022   1h 59m    6.5   2716
+99                                Aykut Eniste 2 2021   1h 55m    6.5   3607
+100                                 Incir Reçeli 2011   1h 34m    6.5  14147
+101                      Karakomik Filmler: Deli 2020       1h    6.5   9168
+102                                       Çiçero 2019    2h 6m    6.5   6408
+103                                 Ejder Kapani 2010   1h 45m    6.5   5516
+104                                Hükümet Kadin 2013   1h 39m    6.5   9201
+105                                          Kor 2016   1h 55m    6.4   2504
+106                                   Fort Bliss 2014   1h 56m    6.4   3511
+107                       The Ottoman Lieutenant 2017   1h 46m    6.4  26568
+108                            Türk Isi Dondurma 2019       2h    6.4   5233
+109                               Babamin Kemani 2022   1h 52m    6.4   4022
+110                   Karakomik Filmler: 2 Arada 2019       1h    6.4  13439
+111 Celal Tan ve Ailesinin Asiri Acikli Hikayesi 2011   1h 30m    6.4   3431
+112                                  Gise Memuru 2010   1h 36m    6.4   4552
+113                               Do Not Disturb 2023   1h 54m    6.3   8958
+114                          Güzelligin Portresi 2019    2h 7m    6.3   3143
+115                                    Geçen Yaz 2021   1h 41m    6.3   3402
+116                       Dügün Dernek 2: Sünnet 2015   1h 52m    6.3  11203
+117                          Zaman Makinesi 1973 2014   1h 45m    6.3   3275
+118                                    Sag Salim 2012   1h 38m    6.3   6521
+119                                  Vay Arkadas 2010   1h 40m    6.3   2605
+120                                 Nadide Hayat 2015   1h 58m    6.3   3945
+121                             Illegal Hayatlar 2023   1h 45m    6.2   4835
+122                                      Bulanti 2015   1h 52m    6.2   2761
+123                               Hedefim Sensin 2018   1h 53m    6.2   5006
+124                           Anadolu Kartallari 2011       2h    6.2   5648
+125               Sen Hiç Ates Böcegi Gördün Mü? 2021   1h 53m    6.2   5504
+126                                 Olanlar Oldu 2017   1h 48m    6.2   4469
+127                                        Selam 2013   1h 44m    6.2   2622
+128                        Sen Benim HerSeyimsin 2016   1h 47m    6.2   2970
+129                           Kurtulus Son Durak 2012   1h 46m    6.2   2716
+130                                     Siccin 2 2015   1h 33m    6.1   3743
+131                          Siccîn 3: Cürmü Ask 2016   1h 50m    6.1   3041
+132                                   Su ve Ates 2013   1h 53m    6.1   4888
+133                              Ikimizin Yerine 2016    2h 6m    6.1   7298
+134                            Bir Ask Iki Hayat 2019   1h 46m    6.1   3113
+135                            Kocan Kadar Konus 2015   1h 48m    6.1   5436
+136                                   Sonsuz Ask 2017   1h 54m    6.1   2684
+137                             Ailecek Saskiniz 2018   1h 53m    6.1   7944
+138                                Yol Arkadasim 2017   1h 55m    6.1   7512
+139                     Kurtlar Vadisi: Filistin 2011   1h 45m    6.1   9545
+140                              Hükümet Kadin 2 2013   1h 45m    6.1   5191
+141                                       Siccîn 2014   1h 36m    6.0   5102
+142                Organize Isler: Sazan Sarmali 2019    2h 1m    6.0  15880
+143                               Aci Tatli Eksi 2017   1h 40m    6.0   2797
+144                            Sevimli Tehlikeli 2015   1h 53m    6.0   3858
+145                                      Azizler 2021   1h 36m    6.0  11292
+146                               Incir Reçeli 2 2014   1h 43m    6.0   4607
+147                     Patron Mutlu Son Istiyor 2014   1h 49m    6.0   7145
+148                            Dabbe: Zehr-i Cin 2014   2h 13m    5.9   4294
+149                              Mutluluk Zamani 2017   1h 48m    5.9   5777
+150                               Eyyvah Eyvah 3 2014   1h 45m    5.9   7934
+151                                 Içimdeki Ses 2015   1h 33m    5.9   3573
+152                              Yol Arkadasim 2 2018   1h 56m    5.9   3753
+153                                       Baskin 2015   1h 37m    5.8  12143
+154                               Yilbasi Gecesi 2022   2h 22m    5.8   4454
+155                        D@bbe: Bir Cin Vakasi 2012   1h 59m    5.8   4215
+156                             Kolpaçino: Bomba 2011   1h 32m    5.8   7976
+157                          Kolonya Cumhuriyeti 2017   1h 50m    5.8   5400
+158                             Eltilerin Savasi 2020   1h 58m    5.8   5034
+159                               Kardesim Benim 2016       2h    5.8   5019
+160                                    Yok Artik 2015   1h 39m    5.8   3935
+161                                    Boga Boga 2023   1h 52m    5.7   4520
+162                             Sen Yasamaya Bak 2022   1h 44m    5.7   3738
+163                              Asiklar Bayrami 2022   1h 42m    5.7   3015
+164                       New York'ta Bes Minare 2010   1h 59m    5.7  15452
+165                           Istanbul Kirmizisi 2017   1h 50m    5.7   7101
+166                     Kaybedenler Kulübü Yolda 2018   1h 36m    5.7   2979
+167                   Kocan Kadar Konus: Dirilis 2016   1h 48m    5.7   3466
+168                                  Sen Inandir 2023   1h 44m    5.6   2624
+169                                Dabbe (Dab6e) 2015   2h 40m    5.6   3193
+170                                 Biz Böyleyiz 2020    2h 1m    5.6   5821
+171                        Ali Baba ve 7 Cüceler 2015   1h 54m    5.6  20998
+172                             Yarina Tek Bilet 2020   1h 30m    5.6   5430
+173                    Karakomik Filmler: Emanet 2020       1h    5.6   7673
+174                                Tatlim Tatlim 2017   1h 35m    5.6   3579
+175                                  Küçük Esnaf 2016   1h 44m    5.6   4577
+176                                 Dedemin Fisi 2016   1h 40m    5.6   3946
+177                              Çakallarla Dans 2010   1h 42m    5.6   7312
+178                   Sen Kiminle Dans Ediyorsun 2017   1h 46m    5.6   2620
+179                           Çalgi Çengi Ikimiz 2017   1h 56m    5.6   4868
+180                                     Can Feda 2018   1h 49m    5.5   3777
+181                                     Deli Ask 2017   1h 44m    5.5   3135
+182                                          Kin 2021   1h 45m    5.5   4797
+183                   Karakomik Filmler: Kaçamak 2019       1h    5.5  10496
+184                                    Ay Lav Yu 2010   1h 42m    5.5   5203
+185                                 Bizim Hikaye 2015   1h 37m    5.4  18166
+186                                 Ali Kundilli 2015   1h 58m    5.4   3259
+187                                Hadi Insallah 2014   1h 36m    5.4   4309
+188                      Istanbul Için Son Çagri 2023   1h 31m    5.3   7745
+189                               Ask Taktikleri 2022   1h 37m    5.3   5854
+190                                Aaahh Belinda 2023   1h 37m    5.3   3114
+191                            Çakallarla Dans 6 2022   1h 56m    5.3   5282
+192                              Romantik Komedi 2010   1h 35m    5.3   5357
+193                             G.D.O. Kara Kedi 2013   1h 37m    5.3   5426
+194                               Recep Ivedik 7 2022   2h 13m    5.2   6508
+195            Romantik Komedi 2: Bekarliga Veda 2013   1h 45m    5.2   3579
+196                                     Ya Sonra 2011   1h 45m    5.2   2560
+197                               Berlin Kaplani 2012   1h 38m    5.2   7204
+198                                      Deliler 2018    2h 1m    5.1   3494
+199                                      Görümce 2016   1h 49m    5.0   3483
+200                                  Evim Sensin 2012   1h 31m    5.0   6105
+201                                  Sen Kimsin? 2012   1h 41m    5.0   5441
+202             Çakallarla Dans 3: Sifir Sikinti 2014   1h 42m    5.0   3052
+203                      Sag Salim 2: Sil Bastan 2014   1h 38m    4.9   3486
+204                               Deniz ve Günes 2018   1h 36m    4.9   2641
+205                                 Cingöz Recai 2017   1h 53m    4.8   4721
+206                                     Deliha 2 2018   1h 46m    4.7   2838
+207                             Alamet-i Kiyamet 2016   1h 28m    4.7   2657
+208                              Bayi Toplantisi 2020   1h 54m    4.6   4222
+209                                  Baba Parasi 2020   1h 56m    4.6   3551
+210                                     Iyi Oyun 2018   1h 54m    4.6   4084
+211                                       Deliha 2014   1h 47m    4.6   4873
+212             Hür Adam: Bediüzzaman Said Nursi 2011   2h 43m    4.6   3596
+213           Çakallarla Dans 2: Hastasiyiz Dede 2012   1h 41m    4.6   3956
+214                  Çok Filim Hareketler Bunlar 2010   1h 44m    4.5   5170
+215                          Niyazi Gül Dörtnala 2015   1h 46m    4.5   3459
+216                               Recep Ivedik 3 2010   1h 35m    4.2  20842
+217                           Kolpaçino 3. Devre 2016   1h 33m    4.1   4882
+218                            Çakallarla Dans 4 2016   1h 49m    4.1   3051
+219                        Kurtlar Vadisi: Vatan 2017   1h 45m    3.9   3339
+220                               Recep Ivedik 4 2014   1h 57m    3.8  18124
+221                            Çakallarla Dans 5 2018   1h 42m    3.8   2575
+222                              Ask Sana Benzer 2015   1h 55m    3.7   3530
+223              Bizans Oyunlari: Geym of Bizans 2016   1h 41m    3.7   3201
+224                                 9 Kere Leyla 2020   1h 52m    3.7   7882
+225                    Sümela'nin Sifresi: Temel 2011   1h 30m    3.7   3154
+226                                       Bihter 2023   1h 53m    3.6   3444
+227                              Osman Pazarlama 2016   1h 54m    3.5   6789
+228                               Recep Ivedik 5 2017   1h 54m    3.4  17618
+229                              Celal ile Ceren 2013   1h 54m    3.1  43253
+230                                  Sabit Kanca 2013   1h 40m    3.1   2650
+231                               Recep Ivedik 6 2019   1h 50m    3.0   8681
+232                     Kutsal Damacana 2: Itmen 2010   1h 38m    3.0   5472
+233                              Kafalar Karisik 2018   1h 35m    3.0   3046
+234                                        Açela 2020   1h 10m    2.7   2671
+235                               Bir Baba Hindu 2016   1h 52m    2.6   2637
+236                                       Kayhan 2018   1h 45m    2.2   3614
+237                       Hababam Sinifi Yeniden 2019   1h 46m    2.2   3857
+238               Enes Batur Hayal mi Gerçek mi? 2018   1h 50m    2.0  55901
+239                                   Kötü Çocuk 2017    2h 5m    2.0   2955
+240                Sihirbazlik Okulunda Bir Türk 2015   1h 31m    1.7   3700
+241                               Kod Adi K.O.Z. 2015   1h 54m    1.7  27602
+242                                  OHA Diyorum 2017   1h 30m    1.6   6968
+243                                    Borç Harç 2019   1h 30m    1.4   4772
+244                   Enes Batur Gerçek Kahraman 2019   1h 39m    1.4   9548
+245                               Cumali Ceber 2 2018   1h 40m    1.2  10249
+246                                        Müjde 2022      48m    1.2   9939
+247                            15/07 Safak Vakti 2021   1h 35m    1.2  20609
+248                                         Reis 2017   1h 48m    1.0  73983
+249               Cumali Ceber: Allah Seni Alsin 2017   1h 40m    1.0  39273</code></pre>
+</div>
+</div>
+</section>
+<section id="ratings-over-the-years" class="level2">
+<h2 class="anchored" data-anchor-id="ratings-over-the-years">Ratings over the years</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>rating_avg <span class="ot">&lt;-</span> movie_list <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_rating =</span> <span class="fu">mean</span>(rating, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">num_movies =</span> <span class="fu">n</span>())</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># scatter plot</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rating_avg, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> avg_rating, <span class="at">size =</span> num_movies)) <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yearly Rating Averages and Number of Movies"</span>,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Average Rating"</span>,</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="st">"Number of Movies"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot number of movies over the years</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rating_avg, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> num_movies)) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of Movies Over the Years"</span>,</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Movies"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># box plots of ratings over the years</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(movie_list, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.factor</span>(year), <span class="at">y =</span> rating)) <span class="sc">+</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Box Plots of Ratings Over the Years"</span>,</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Rating"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-4-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="correlation-between-votes-and-ratings." class="level2">
+<h2 class="anchored" data-anchor-id="correlation-between-votes-and-ratings.">Correlation between Votes and Ratings.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>correlation <span class="ot">&lt;-</span> <span class="fu">cor</span>(movie_list<span class="sc">$</span>votes, movie_list<span class="sc">$</span>rating, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(correlation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.08563462</code></pre>
+</div>
+</div>
+<p>Honestly, i always thought that when the vote is getting higher, it is harder to maintain a good rating. Becasue it means that movie is popular and everyone started to give vote. When the vote is getting higher, some people may give 1 star just to do it. But for this study , correlation between votes and ratings is 0.08563462 which means that there are not a negative relationship between this two variables. ## Correlation between Duration and Ratings.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Converting durations to a numeric value (i remember to do it really late i know sorry :( ))</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>convert_duration <span class="ot">&lt;-</span> <span class="cf">function</span>(duration) {</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  parts <span class="ot">&lt;-</span> <span class="fu">strsplit</span>(duration, <span class="st">"h|m"</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  hours <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(parts[[<span class="dv">1</span>]][<span class="dv">1</span>])</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  minutes <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(parts[[<span class="dv">1</span>]][<span class="dv">2</span>])</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>  total_minutes <span class="ot">&lt;-</span> hours <span class="sc">*</span> <span class="dv">60</span> <span class="sc">+</span> minutes</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(total_minutes)</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>movie_list <span class="ot">&lt;-</span> movie_list <span class="sc">%&gt;%</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">duration_numeric =</span> <span class="fu">sapply</span>(movie_list<span class="sc">$</span>duration, convert_duration))</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a><span class="co"># correlation between numeric Duration and Ratings</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>correlation_duration_rating <span class="ot">&lt;-</span> <span class="fu">cor</span>(movie_list<span class="sc">$</span>duration_numeric, movie_list<span class="sc">$</span>rating, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(correlation_duration_rating)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.304189</code></pre>
+</div>
+</div>
+<p>I remember that i forgot to change durations to a numeric value.I have now done that . (a bit late i know sorry) Correalation is 0.304189. which means that there is a positive correlation but i think it is relatively a weak correlation.</p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

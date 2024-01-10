@@ -2,8 +2,82 @@
 title: "Assignment 2"
 ---
 
-# Assignment 2
+# Assignment 2 (Web Scraping of Turkish Movies form IMDb)
+
+For the start of my work i follow the instructions on the assignment to achieve necessary page and its url.
+
+I also wathched tutorials for this project on youtube. I started with the loading necessary libraries . I also used google extension named selector gadget.
+
+I started with the first url that containts more recent movies (2010-2023).
+
 
 ```{r}
-1 + 1
+library(rvest)
+library(dplyr)
+library(tidyverse)
+library(stringr)
+
+# our first url 
+url1 = "https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250"
+# scraping the movie titles
+title1 <- read_html(url1) %>%
+  html_elements(".ipc-title__text") %>%
+  html_text()
+title1 <- tail(head(title1,-1),-1)
+title1 <- str_split(title1, " ", n=2)
+title1 <- unlist(lapply(title1, function(x) {x[2]}))
+print(title1)
+
+year1 <- read_html(url1) %>%
+  html_elements(".dli-title-metadata-item:nth-child(1)") %>%
+  html_text() %>%
+  as.numeric()
+
+duration1 <- read_html(url1) %>%
+  html_elements(".dli-title-metadata-item:nth-child(2)") %>%
+  html_text()
+duration1 <- unlist(lapply(duration1, convert_time))
+print(duration1)
+
+# scraping rating 
+rating1 <- read_html(url1) %>%
+  html_elements(".ratingGroup--imdb-rating") %>%
+  html_text()
+
+# I struggled something here so i searched and find a solution. This code somehow is making sure that there are no NAs to stopping us even if there are any. (If the code is working, do not touch, right? :)) 
+rating1 <- as.numeric(str_extract(rating1, "\\d+\\.\\d+"))
+
+
+
+
+# scraping votes 
+votes1 <- read_html(url1) %>%
+  html_elements(".kRnqtn") %>%
+  html_text()
+
+#  scrapped  text and converting it to numeric
+votes1 <- as.numeric(gsub("[^0-9]", "", votes1))
+
+
+# Checking the length of all vectors
+if (length(title1) == length(year1) &&
+    length(title1) == length(duration1) &&
+    length(title1) == length(rating1) &&
+    length(title1) == length(votes1)) {
+  
+  # Finally we are creating our data frame to see if it works
+  movie_list <- data.frame(
+    title = title1,
+    year = year1,
+    duration = duration1,
+    rating = rating1,
+    votes = votes1
+  )
+  
+  # Here is the list of all movies between 2010-2023
+  print(movie_list)
+} else {
+  # if vector lengths did not become same
+  print("Error: Vectors have different lengths.")
+}
 ```
